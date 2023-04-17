@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Meeting Minutes</title>
+    <link rel="icon" sizes="114x114" href="icon.png" type="image/png" />
+</head>
+
+<body>
+    <header>
+        <h1>Meeting Minutes</h1>
+        <h3>04/16 check-ins</h3>
+        <div>Navigator</div>
+        <nav>
+            <ul>
+                <li><a href="#attendance-list">Attendance List</a></li>
+                <li><a href="#agenda">Agenda</a></li>
+                <li><a href="#unfinished">Unfinished</a></li>
+                <li><a href="#new-business">New Business</a></li>
+                <li><a href="#comments-questions">Comments/Questions</a></li>
+                <li><a href="#audio-recording">Audio Recording</a></li>
+                <li><a href="#video-recording">Video Recording</a></li>
+                <li><a href="#form">Form</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section>
+            <h2 id="attendance-list">Attendance List</h2>
+            <details>
+                <summary>Attendance List</summary>
+                <span>People A</span>, <span>People B</span>, <span>People C</span>, <span>People D</span>
+            </details>
+        </section>
+        <section>
+            <h2 id="agenda">Agenda</h2>
+            <ol>
+                <li>Check in</li>
+                <li>Unfinished tasks</li>
+                <li>New tasks</li>
+            </ol>
+        </section>
+        <section>
+            <h2 id="unfinished">Unfinished</h2>
+            <p>
+                Lorem ipsum dolor sit amet, <b>consectetur</b> adipiscing elit. In vulputate
+                rutrum magna, et <b>faucibus</b> lorem dignissim id. Nunc convallis luctus
+                ornare. Integer at <b>accumsan</b> leo. Curabitur massa dui, semper nec dolor
+                sit amet, facilisis suscipit purus.
+                <br />
+                <strong>All previous tasks are finished.</strong>
+            </p>
+        </section>
+        <section>
+            <h2 id="new-business">New Business</h2>
+            <p>
+                Lorem ipsum dolor sit amet, <i>consectetur</i> adipiscing elit. In vulputate
+                rutrum magna, et <i>faucibus</i> lorem dignissim id. Nunc convallis luctus
+                ornare. Integer at <i>accumsan</i> leo. Curabitur massa dui, semper nec dolor
+                sit amet, facilisis suscipit purus.
+                <br />
+                <em>New tasks are due 04/21.</em>
+            </p>
+        </section>
+        <section>
+            <h2 id="comments-questions">Comments/Questions</h2>
+            <img src="questions.png" alt="questions" width="250" />
+        </section>
+        <section>
+            <h2 id="audio-recording">Audio Recording</h2>
+            <figure>
+                <figcaption>Audio:</figcaption>
+                <audio controls src="audio.mp3">
+                    <a href="audio.mp3">Download audio</a>
+                </audio>
+            </figure>
+        </section>
+        <section>
+            <h2 id="video-recording">Video Recording</h2>
+            <video controls width="250">
+                <source src="video.mp4" type="video/mp4">
+                Download the <a href="video.mp4">MP4</a> video.
+            </video>
+        </section>
+    </main>
+    <hr />
+    <footer>
+        <h3 id="form">Form</h3>
+        <form method="get">
+            <input type="text" placeholder="Enter Text" />
+            <button>Submit</button>
+        </form>
+
+        <form method="get">
+            <label>Checkbox:<input type="checkbox" />yes or no</label>
+            <button>Save</button>
+        </form>
+
+        <form method="get">
+            <label>Date: <input type="date" /></label>
+            <button>Save</button>
+        </form>
+
+        <form method="get">
+            <fieldset>
+                <legend>Fiedset</legend>
+                <label><input type="radio" name="radio" value="yes" />Yes</label>
+                <label><input type="radio" name="radio" value="no" />No</label>
+            </fieldset>
+        </form>
+
+        <label for="textarea">Textbox:</label>
+        <textarea id="textarea" name="textarea" rows="5" cols="50"> Some text here... </textarea>
+
+        <label for="datalist">Datalist:</label>
+        <input list="list" id="datalist" name="datalist">
+        <datalist id="list">
+            <option value="item1">
+            <option value="item2">
+            <option value="item3">
+        </datalist>
+
+        <label for="select">Select:</label>
+        <select name="select" id="select">
+            <option value="">--Please choose an option--</option>
+            <option value="item1">Item1</option>
+            <option value="item2">Item2</option>
+            <option value="item3">Item3</option>
+        </select>
+    </footer>
+</body>
+
+</html>
