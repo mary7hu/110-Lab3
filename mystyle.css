@@ -1,0 +1,132 @@
+* {
+    background-color: linen;
+}
+
+@media all and (display-mode: fullscreen) {
+    body {
+        margin: 5vw;
+        border: 5px dotted lightblue;
+    }
+}
+
+h1 {
+    border-style: dotted;
+    border-width: 4px;
+    border-color: #ffc3a0;
+    border-radius: 10%;
+    margin: auto;
+    padding-top: 3vh;
+    padding-right: 5vw;
+    padding-bottom: 3vh;
+    padding-left: 5vw;
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    position: sticky;
+    top: 0;
+}
+
+/* class selector */
+.test {
+    border: 4px dotted #ffc3a0;
+    color: hsl(139, 36%, 43%);
+    margin: 3vmin 5vw 3vh 5vmax;
+    padding: 1vh 1vw 1vh 1vw;
+}
+
+#fixed {
+    position: fixed;
+}
+
+#attendance-list {
+    background-color: white;
+}
+
+a[href="#attendance-list"] {
+    background-color: yellow;
+}
+
+button:hover {
+    color: blue;
+}
+
+button:active {
+    color: red;
+}
+
+strong,
+em {
+    color: saddlebrown;
+    text-decoration: underline;
+}
+
+section li {
+    color: green;
+}
+
+div>h2 {
+    color: lightcoral;
+    margin-top: 12pt;
+    margin-bottom: 12pt;
+    margin-right: 12pt;
+    margin-left: 1pc;
+    height: 5vmin;
+    width: 5vmin;
+}
+
+h2~p {
+    color: rebeccapurple;
+    max-width: 400px;
+    min-width: 100px;
+}
+
+summary+span {
+    color: tomato;
+    display: block;
+}
+
+h2.special {
+    color: olive;
+    display: inline;
+}
+
+.flex-container {
+    display: flex;
+    background-color: lightblue;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.flex-container>div {
+    background-color: #f1f1f1;
+    margin: 10px;
+    padding: 5px;
+    font-size: 20px;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    column-gap: 5vw;
+    row-gap: 5vh;
+    background-color: lightgray;
+    padding: 10px;
+}
+
+.grid-item {
+    background-color: #f1f1f1;
+    border: 1px solid black;
+    padding: 3vmin;
+    font-size: 20px;
+    text-align: center;
+}
+
+.grid-item1 {
+    background-color: #f1f1f1;
+    border: 1px solid black;
+    padding: 3vmin;
+    font-size: 20px;
+    text-align: center;
+    grid-column-start: 1;
+    grid-column-end: 3;
+}

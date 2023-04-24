@@ -6,13 +6,25 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Meeting Minutes</title>
     <link rel="icon" sizes="114x114" href="icon.png" type="image/png" />
+    <link rel="stylesheet" href="mystyle.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet">
+    <style>
+        body {
+            background-color: linen;
+        }
+    </style>
 </head>
 
 <body>
     <header>
-        <h1>Meeting Minutes</h1>
-        <h3>04/16 check-ins</h3>
-        <div>Navigator</div>
+        <h1 style="color:rgb(0,204,204)">Meeting Minutes</h1>
+        <h3 class="test">04/16 check-ins</h3>
+        <div>
+            <h2>Navigator</h2>
+        </div>
+        <h2 id="fixed">fixed</h2>
         <nav>
             <ul>
                 <li><a href="#attendance-list">Attendance List</a></li>
@@ -35,7 +47,7 @@
             </details>
         </section>
         <section>
-            <h2 id="agenda">Agenda</h2>
+            <h2 id="agenda" class="special">Agenda</h2>
             <ol>
                 <li>Check in</li>
                 <li>Unfinished tasks</li>
@@ -67,6 +79,23 @@
         <section>
             <h2 id="comments-questions">Comments/Questions</h2>
             <img src="questions.png" alt="questions" width="250" />
+            <div class="flex-container">
+                <div>Question 1</div>
+                <div>Question 2</div>
+                <div>Question 3</div>
+                <div>Question 4</div>
+                <div>Question 5</div>
+            </div>
+            <div class="grid-container">
+                <div class="grid-item1">Comment 1</div>
+                <div class="grid-item">Comment 2</div>
+                <div class="grid-item">Comment 3</div>
+                <div class="grid-item">Comment 4</div>
+                <div class="grid-item">Comment 5</div>
+                <div class="grid-item">Comment 6</div>
+                <div class="grid-item">Comment 7</div>
+                <div class="grid-item">Comment 8</div>
+            </div>
         </section>
         <section>
             <h2 id="audio-recording">Audio Recording</h2>
